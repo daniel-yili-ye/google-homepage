@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: arial,sans-serif;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .center {
@@ -24,11 +24,21 @@ a:hover {
 #ip {
     border-radius: 25px;
     border: 1px solid rgb(200, 200, 200);
-    padding: 20px; 
-    width: 500px;
-    height: 15px;
-    margin: 25px 10px 10px;
+    padding: 5px; 
+    width: 450px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto 0;
 }
+
+#search {
+    padding: 5px; 
+    width: 400px;
+    border: 0px;
+}
+
 
 #link {
     color: #1a0dab
@@ -57,17 +67,21 @@ header {
     display: table-cell;
     vertical-align: middle;
 }
-
-.top-right, .bot-right{
+.bot-right{
     float: right;
     height: 100%;
     margin-right: 10px;
 }
 
+.top-right{
+    float: right;
+    height: 100%;
+}
+
 .top-right a, .bot-right a{
     height: 100%;
     display: table;
-    float: right;
+    float: left;
     padding: 0px 7px;
 }
 
@@ -89,3 +103,23 @@ input[type=submit] {
     border: 0px;
     border-radius: 3px;
 }
+
+#daniel {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
